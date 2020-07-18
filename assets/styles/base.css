@@ -22,21 +22,6 @@ body {
 	padding: 0;
 }
 
-.grid {
-	width: 1200px;
-	max-width: 100%;
-	margin: 0 auto;
-}
-
-.grid-row {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.grid-full-width {
-	width: 100%;
-}
-
 a {
 	text-decoration: none;
 }
@@ -48,6 +33,7 @@ ul {
 
 img {
 	display: inline-block;
+	max-width: 100%;
 }
 
 .btn {

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/styles/base.css">
   <link rel="stylesheet" href="./assets/styles/main.css">
+  <link rel="stylesheet" href="./assets/styles/grid.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/31bd191ea4.js" crossorigin="anonymous"></script>
 </head>
@@ -14,7 +15,7 @@
 <body>
   <div class="app">
     <header class="header">
-      <div class="grid">
+      <div class="grid wide">
         <nav class="navbar">
           <ul class="navbar__list">
             <li class="navbar__item navbar__item-separate"><a href="#" class="navbar__link">Kênh Người
@@ -192,7 +193,7 @@
                       </div>
                     </div>
                   </a>
-                  
+
                 </div>
                 <div class="cart-dropdown__footer">
                   <p class="cart-dropdown__total-item">22 Sản phẩm thêm vào giỏ hàng</p>
@@ -207,26 +208,1010 @@
     </header>
     <!-- End header -->
     <div class="container">
-      <div class="grid">
+      <div class="grid wide">
         <div class="row">
-          <aside class="category">
-            <h4 class="category__heading">Danh Mục Sản Phẩm</h4>
-            <a href="#" class="category__item-link">Tất cả sản phẩm</a>
-            <a href="#" class="category__item-link">Ohui</a>
-            <a href="#" class="category__item-link">3ce</a>
-            <a href="#" class="category__item-link">Whoo</a>
-            <a href="#" class="category__item-link">Thực phầm chức năng</a>
-            <a href="#" class="category__item-link">Dịch vụ</a>
-          </aside>
-          <!-- End aside -->
-          <main class="main-content"></main>
-          <!-- End main-content -->
+          <div class="col l-2">
+            <aside class="category">
+              <h4 class="category__heading">
+                <i class="fa fa-list-ul"></i>
+                <span>Danh Mục</span>
+              </h4>
+              <a href="#" class="category__item-link">Tất cả sản phẩm</a>
+              <a href="#" class="category__item-link">Ohui</a>
+              <a href="#" class="category__item-link category__item-link--active">3ce</a>
+              <a href="#" class="category__item-link">Whoo</a>
+              <a href="#" class="category__item-link">Thực phầm chức năng</a>
+              <a href="#" class="category__item-link">Dịch vụ</a>
+            </aside>
+            <!-- End aside -->
+          </div>
+
+          <div class="col l-10">
+            <main class="main-content">
+              <div class="filter-bar">
+                <div class="filter-bar__left">
+                  <p class="filter-bar__label">Sắp xếp theo</p>
+                  <a href="#" class="filter-bar__btn">Phổ biến</a>
+                  <a href="#" class="filter-bar__btn filter-bar__btn-primary">Mới nhất</a>
+                  <a href="#" class="filter-bar__btn">Bán chạy</a>
+                  <div class="filter-bar__price">
+                    <span class="filter-bar__price-label">Giá</span>
+                    <i class="fa fa-angle-down"></i>
+
+                    <div class="filter-bar__price-dropdown">
+                      <a href="#" class="filter-bar__price-item">Giá: Thấp đến cao</a>
+                      <a href="#" class="filter-bar__price-item">Giá: Cao đến thấp</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- End filter bar left -->
+                <div class="filter-bar__right">
+                  <div class="filter-bar__page">
+                    <span class="filter-bar__page-current">1</span>
+                    <span>/14</span>
+                  </div>
+                  <div class="filter-bar__directional">
+                    <a href="#" class="filter-bar__directional--left filter-bar__directional--disable">
+                      <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="#" class="filter-bar__directional--right">
+                      <i class="fa fa-angle-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- End filter bar right -->
+              </div>
+              <!-- End filter bar -->
+
+              <div class="home-product">
+                <div class="row">
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4">
+                    <a href="#" class="product-card__link">
+                      <div class="product-card">
+                        <div class="product-card__image"
+                          style="background-image: url('https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn');">
+                          <!-- <img src="https://cf.shopee.vn/file/8bfdf4fd7920223080f33b73f7cc7389_tn" alt="image"> -->
+                        </div>
+                        <div class="product-card__body">
+                          <h2 class="product-card__name">Áo khoác nam chông nắng</h2>
+                          <div class="product-card__price">
+                            <del class="product-card__price--old">180.000đ</del>
+                            <span class="product-card__price--new">150.000đ</span>
+                            <span class="product-card__ship">
+                              <i class="fa fa-shipping-fast"></i>
+                            </span>
+                          </div>
+                          <div class="product-card__rating">
+                            <div class="product-card__rating-star">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-card__rating-sold">Đã bán 160</div>
+                          </div>
+                          <div class="product-card__address-shop">Tp Hồ Chí Minh</div>
+                        </div>
+
+                        <div class="product-card__favorite-tag">Yêu thích</div>
+                        <div class="product-card__discount-tag">
+                          <span class="product-card__discount-percent">10%</span>
+                          <span class="product-card__discount-label">GIẢM</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+
+
+                </div>
+              </div>
+              <!-- End home product -->
+            </main>
+            <!-- End main-content -->
+
+            <div class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">
+                    <i class="pagination__link-icon  fas fa-angle-left"></i>
+                  </a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link pagination__link--active">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">3</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">4</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">5</a>
+                </li>
+
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">
+                    <i class="pagination__link-icon  fas fa-angle-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Pagination -->
+          </div>
         </div>
+
       </div>
-      
+
     </div>
     <!-- End container -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="grid wide">
+        <div class="row">
+          <div class="col l-2-4 m-4 c-12">
+            <div class="footer__care">
+              <h3 class="footer__title-heading">CHĂM SÓC KHÁCH HÀNG</h3>
+              <ul class="footer__care-list">
+                <li class="footer__care-item">
+                  <a href="" class="footer__care-link">Trung tâm hỗ trợ</a>
+                </li>
+                <li class="footer__care-item">
+                  <a href="" class="footer__care-link">Shopee mall</a>
+                </li>
+                <li class="footer__care-item">
+                  <a href="" class="footer__care-link">Hướng dẫn mua hàng</a>
+                </li>
+                <li class="footer__care-item">
+                  <a href="" class="footer__care-link">Hướng dẫn bán hàng</a>
+                </li>
+                <li class="footer__care-item">
+                  <a href="" class="footer__care-link">Chăm sóc khách hàng</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-12">
+            <div class="footer__about">
+              <h3 class="footer__title-heading">VỀ SHOPEE</h3>
+              <ul class="footer__about-list">
+                <li class="footer__about-item">
+                  <a href="" class="footer__about-link">Giới thiệu về shopee Việt Nam</a>
+                </li>
+                <li class="footer__about-item">
+                  <a href="" class="footer__about-link">Tuyển dụng</a>
+                </li>
+                <li class="footer__about-item">
+                  <a href="" class="footer__about-link">Điều khoản Shopee</a>
+                </li>
+                <li class="footer__about-item">
+                  <a href="" class="footer__about-link">Chính sách bảo mật</a>
+                </li>
+                <li class="footer__about-item">
+                  <a href="" class="footer__about-link">Kênh người bán</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-12">
+            <div class="footer__pay">
+              <h3 class="footer__title-heading">THANH TOÁN</h3>
+              <ul class="footer__pay-list">
+                <li class="footer__pay-item footer__pay-item--visa">
+                  
+                </li>
+                <li class="footer__pay-item footer__pay-item--mc">
+                  
+                </li>
+                <li class="footer__pay-item footer__pay-item--jcb">
+                  
+                </li>
+                <li class="footer__pay-item footer__pay-item--blue">
+                  
+                </li>
+                <li class="footer__pay-item footer__pay-item--cod">
+                  
+                </li>
+                <li class="footer__pay-item footer__pay-item--tg">
+                  
+                </li>
+              </ul>
+
+              <h3 class="footer__title-heading">ĐƠN VỊ VẬN CHUYỂN</h3>
+              <ul class="footer__pay-list">
+                <li class="footer__pay-item footer__pay-item--ghtk">
+                </li>
+                <li class="footer__pay-item footer__pay-item--ghn">
+                </li>
+                <li class="footer__pay-item footer__pay-item--vt-post">
+                </li>
+                <li class="footer__pay-item footer__pay-item--vn-post">
+                </li>
+                <li class="footer__pay-item footer__pay-item--jt">
+                </li>
+                <li class="footer__pay-item footer__pay-item--grap">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-12">
+            <div class="footer__follow">
+              <h3 class="footer__title-heading">THEO DÕI CHÚNG TÔI TRÊN</h3>
+              <ul class="footer__follow-list">
+                <li class="footer__follow-item">
+                  <a href="" class="footer__follow-link">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                  </a>
+                </li>
+                <li class="footer__follow-item">
+                  <a href="" class="footer__follow-link">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                  </a>
+                </li>
+                <li class="footer__follow-item">
+                  <a href="" class="footer__follow-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>Linkedin</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-12">
+            <div class="footer__download">
+              <h3 class="footer__title-heading">TẢI ỨNG DỤNG SHOPEE NGAY THÔI</h3>
+              <div class="footer__download-body">
+                <div class="footer__download-qr">
+                  <img src="./assets/image/qr.png" alt="mã qr">
+                </div>
+                <div class="footer__download-store">
+                  <a href="">
+                    <img src="./assets/image/appstore.png" alt="">
+                  </a>
+                  <a href="">
+                    <img src="./assets/image/chplay.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <ul class="footer-info-list">
+          <li class="footer-info-item">
+            <a href="#" class="footer-info-item__link">CHÍNH SÁCH BẢO MẬT</a>
+          </li>
+          <li class="footer-info-item">
+            <a href="#" class="footer-info-item__link">QUI CHẾ HOẠT ĐỘNG</a>
+          </li>
+          <li class="footer-info-item">
+            <a href="#" class="footer-info-item__link">CHÍNH SÁCH VẬN CHUYỂN</a>
+          </li>
+          <li class="footer-info-item">
+            <a href="#" class="footer-info-item__link">CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</a>
+          </li>
+        </ul>
+
+        <div class="footer-register-vn">
+          <span class="footer-rgt-label">Công ty TNHH F8</span>
+        </div>
+        <p class="footer-address">Địa chỉ: Số 20, ngõ 538, đường Láng, quận Đống Đa, thành phố Hà Nội</p>
+        <p class="footer-bussiness-id">Mã số doanh nghiệp: 0108838679 do Sở Kế hoạch &amp; Đầu tư TP Hà Nội cấp lần đầu ngày
+          10/02/2015</p>
+        <p class="copy-right">© 2015 - Bản quyền thuộc về Công ty TNHH TICKID</p>
+      </div>
+    </footer>
 
   </div>
 </body>
